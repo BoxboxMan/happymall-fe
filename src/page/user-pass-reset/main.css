@@ -1,0 +1,89 @@
+/*
+* @Author: MR.S
+* @Date:   2019-12-22 20:00:45
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-03-18 22:22:00
+*/
+.page-wrap{
+    padding: 40px 0;
+}
+.user-content{
+   width: 400px;
+   background: #fff;
+   margin:0px auto;
+   position: relative;
+}
+.user-content .user-item-text{
+   margin-bottom: 10px;
+   font-size: 14px;
+}
+.user-content .step-content{
+    display: none;
+}
+.user-content .user-title{
+    text-align: center;
+    padding:10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+.user-content .user-box{
+    padding: 20px;
+}
+.user-content .user-box .error-item{
+    padding: 4px 0px 4px 40px;
+     border: 1px solid red;
+    margin-bottom: 10px;
+    color: red;
+    background: #fde9e9;
+    position: relative;
+    display: none;
+}
+.user-content .user-box .error-item .error-icon{
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    font-size: 14px;
+    margin-top: -7px;
+
+}
+.user-content .user-box .user-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.user-content .user-box .user-item .user-label{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 40px;
+    line-height: 36px;
+    background: #f3f3f3;
+    font-size: 18px;
+    color: #d3d3d3;
+    text-align: center;
+    border-right: 1px solid #bdbdbd;
+}
+.user-content .user-box .user-item .user-input{
+    padding: 10px 0px 10px 60px;
+    width: 297px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+}
+.user-content .btn-submit{
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 22px;
+}
+.user-content .link-item{
+    text-align: right;
+    margin-top: 10px;
+}
+.user-content .link-item .link{
+    margin-left: 10px;
+}

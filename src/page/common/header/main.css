@@ -1,0 +1,41 @@
+/*
+* @Author: MR.S
+* @Date:   2019-12-02 11:44:31
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-03-19 01:09:30
+*/
+.header .logo{
+    position: absolute;
+    left: 62px;
+    top: 36px;
+    display: block;
+    color: #c60023;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .search-con{
+    padding:40px 0px 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height:36px;
+    line-height: 36px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-button{
+    position: absolute;
+}
+/*面包屑导航*/
+.crumb{
+    height: 50px;
+    line-height: 50px;
+    background: #eee;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-top: 2px solid #c60023;
+}

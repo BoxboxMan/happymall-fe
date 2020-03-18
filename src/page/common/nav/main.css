@@ -1,0 +1,28 @@
+/*
+* @Author: MR.S
+* @Date:   2019-12-02 08:30:19
+* @Last Modified by:   MR.S
+* @Last Modified time: 2019-12-20 18:08:40
+*/
+.nav{
+    background: #F0EBEB;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user-info{
+    float: left;
+}
+.nav .user-info .link{
+    margin-right: 5px;
+}
+.nav .nav-list{
+    float: right;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+}
+
