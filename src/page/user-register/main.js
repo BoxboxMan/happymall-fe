@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-22 18:47:40
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-18 21:50:40
+* @Last Modified time: 2020-03-20 01:10:44
 */
 require('./main.css');
 require('page/common/nav-simple/main.js');
@@ -30,7 +30,11 @@ var page = {
             if(!username){
                 return;
             }
-            _user.checkUsername(username,function(res){
+            var formData ={
+                str  : username,
+                type : 'username'
+            }
+            _user.checkUsername(formData,function(res){
                 formError.hide();
             },function(err){
                 formError.show(err);
@@ -38,16 +42,6 @@ var page = {
         });
         $('.btn.btn-submit').click(function(){
             _this.submit();
-        });
-        $('#username').keyup(function(e){
-            if(e.keyCode === 13){
-                _this.submit();
-            }
-        });
-        $('#password').keyup(function(e){
-            if(e.keyCode === 13){
-                _this.submit();
-            }
         });
     },
     submit : function(){

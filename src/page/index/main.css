@@ -2,5 +2,109 @@
 * @Author: MR.S
 * @Date:   2019-11-17 14:58:04
 * @Last Modified by:   MR.S
-* @Last Modified time: 2019-11-30 22:48:58
+* @Last Modified time: 2020-03-20 07:03:21
 */
+.keywords-list{
+    float: left;
+    width: 240px;
+    height: 370px;
+    padding: 10px 0px;
+    margin-right: 10px;
+    background: #666;
+}
+.keywords-list .keywords-item{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.keywords-list .keywords-item .link{
+    color: #fff;
+}.keywords-list .keywords-item .link:hover{
+    color: #c60023;
+}
+.keywords-list .keywords-item:hover{
+    background: #999;
+}
+
+/*banner-content*/
+.banner-content{
+    background: #999;
+    width:830px;
+    float: left;
+    height: 370px;
+}
+.banner-content .loading{
+    margin-top: 100px;
+    text-align: center;
+}
+.banner-content .carousel-example-generic{
+  
+}
+.banner-content .carousel-example-generic .carousel-indicators{
+    position: absolute;
+}
+.carousel-inner img {
+      width: 50%;
+      height: 50%;
+}
+.left.carousel-control{
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 180px;
+}
+.floor-wrap .floor-title{
+    height: 50px;
+    line-height: 50px;
+    color: #d58717;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px solid #d58717;
+}
+.floor-wrap:nth-child(2) .floor-title{
+    color:#3b838c;
+    border-bottom: 2px solid #3b848c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color:#a93931;
+    border-bottom: 2px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color:#488bad;
+    border-bottom: 2px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color:#642663;
+    border-bottom: 2px solid #642663;
+}
+.floor-wrap .floor-list{
+    overflow: hidden;
+    padding-left: 4px;
+}
+.floor-wrap .floor-list .floor-item{
+    position: relative;
+    width: 194px;
+    height: 220px;
+    margin: 15px 20px 15px 0; 
+    float: left;
+    cursor: pointer;
+    background: #fff;
+}
+.floor-wrap .floor-list .floor-item:hover{
+    box-shadow: 1px 1px 5px;
+}
+.floor-wrap .floor-list .floor-item .floor-text{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+.floor-wrap .floor-list .floor-item .floor-image{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 80%;
+    height: 75%;
+    border:none;
+}

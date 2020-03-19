@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-22 20:00:37
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-19 00:31:08
+* @Last Modified time: 2020-03-20 05:20:35
 */
 require('./main.css');
 require('page/common/nav-simple/main.js');
@@ -78,7 +78,7 @@ var page = {
                 _user.resetPassword({
                     username        : _this.data.username,
                     newPassword     : newPassword,
-                    fogetToken      : _this.data.token,
+                    forgetToken      : _this.data.token,
                 }, function(res){
                     window.location.href = './result.html?type=password-reset';
                 }, function(errMsg){

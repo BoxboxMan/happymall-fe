@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-02 09:13:59
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-19 03:44:37
+* @Last Modified time: 2020-03-20 06:11:08
 */
 var _mall = require('util/mall.js');
 var user = {
@@ -15,7 +15,7 @@ var user = {
             data    : userInfo
         });
     },
-    reigister : function(userInfo,resolve,reject){
+    register : function(userInfo,resolve,reject){
         _mall.request({
             method  : 'POST',
             url     : _mall.getServerUrl('/user/register'),
@@ -52,7 +52,7 @@ var user = {
     },
     checkLogin : function(resolve,reject){
         _mall.request({
-            method  : 'POST',
+            method  : 'GET',
             url     : _mall.getServerUrl('/user/get_user_info'),
             success : resolve,
             error   : reject
@@ -67,11 +67,11 @@ var user = {
             error   : reject 
         });
     },
-    checkUsername : function(username,resolve,reject){
+    checkUsername : function(formData,resolve,reject){
         _mall.request({
             url     : _mall.getServerUrl('/user/check_valid'),
             method  : 'POST',
-            data    : username,
+            data    : formData,
             success : resolve,
             error   : reject
         });
@@ -94,10 +94,10 @@ var user = {
             error   : reject
         });
     },
-    getUserInfo : function(userInfo,resolve,reject){
+    getUserInfo : function(resolve,reject){
         _mall.request({
             url     : _mall.getServerUrl('/user/get_user_info'),
-            method  : 'POST',
+            method  : 'GET',
             success : resolve,
             error   : reject
         });

@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2020-03-19 00:42:40
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-19 03:16:43
+* @Last Modified time: 2020-03-20 05:58:32
 */
 require('page/common/nav/main.js');
 require('page/common/header/main.js');
@@ -15,6 +15,7 @@ var templateIndex = require('./index.string');
 var userCenter = {
     init : function(){
         this.onLoad();
+        this.bindEvent();
     },
     onLoad : function(){
         _navSide.init({
@@ -22,13 +23,24 @@ var userCenter = {
         });
         this.loadUserInfo();
     },
+    loadUserInfo : function(){
+        var userHtml = '';
+        _user.getUserInfo(function(res){
+            userHtml = _mall.renderHtml(templateIndex, res);
+            $('.panel-body').html(userHtml);
+        },
+        function(errMsg){
+            _mall.errorTips(errMsg);
+        });
+    },
     bindEvent : function(){
+        var _this = this;
         $(document).on('click','.btn-submit',function(){
             var userInfo = {
                 phone : $.trim($('#phone').val()),
                 email : $.trim($('#email').val()),
-                question : $.trim($('#question').val()),
-                answer : $.trim($('#answer').val())
+                // question : $.trim($('#question').val()),
+                // answer : $.trim($('#answer').val())
             };
             var validateResult = _this.validateForm(userInfo);
             if(validateResult.status){
@@ -42,16 +54,6 @@ var userCenter = {
             }else{
                 _mall.errorTips(validateResult.msg);
             }
-        })
-    },
-    loadUserInfo : function(){
-        var userHtml = '';
-        _user.getUserInfo(function(res){
-            userHtml = _mall.renderHtml(templateIndex, res);
-            $('.panel-body').html(userHtml);
-        },
-        function(errMsg){
-            _mall.errorTips(errMsg);
         });
     },
     validateForm : function(userInfo){
@@ -67,14 +69,14 @@ var userCenter = {
             result.msg = '请输入正确的邮箱信息';
             return result;
         };
-        if(!_mall.validate(userInfo.question,'require')){
-            result.msg = '密保问题不能为空';
-            return result;
-        };
-        if(!_mall.validate(userInfo.answer,'require')){
-            result.msg = '密保答案不能为空';
-            return result;
-        };
+        // if(!_mall.validate(userInfo.question,'require')){
+        //     result.msg = '密保问题不能为空';
+        //     return result;
+        // };
+        // if(!_mall.validate(userInfo.answer,'require')){
+        //     result.msg = '密保答案不能为空';
+        //     return result;
+        // };
         result.status = true;
         result.msg = '验证通过';
         return result;

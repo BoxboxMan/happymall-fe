@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2019-12-22 19:38:14
+* @Last Modified time: 2020-03-20 04:42:20
 */
 var Hogan = require('hogan.js');
 var conf = {
@@ -16,6 +16,9 @@ var mall = {
             type        : param.method  || 'get',
             dataType    : param.type    || 'json',
             url         : param.url     || '',
+            xhrFields:{
+　　          　　withCredentials:true
+　　        },
             data        : param.data    || '',
             success     : function(res){
                 if(10001 === res.status){      //成功的返回

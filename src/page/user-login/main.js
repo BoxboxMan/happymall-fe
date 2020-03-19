@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-16 16:36:28
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-18 21:50:03
+* @Last Modified time: 2020-03-20 01:29:20
 */
 require('./main.css');
 require('page/common/nav-simple/main.js');
@@ -49,7 +49,7 @@ var page = {
             _user.login(formData,function(res){
                 window.location.href = _mall.getUrlParam('redirect') || './index.html';//跳回登录前的页面
             },function(err){
-                formError.show(err.msg);
+                formError.show(err);
             })
         }else{
             formError.show(validateResult.msg);

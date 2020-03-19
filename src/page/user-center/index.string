@@ -13,12 +13,12 @@
         <span class="text">{{email}}</span>
     </div>
     <div class="form-line">
-        <span class="label">问 题：</span>
-        <span class="text">{{question}}</span>
+        <span class="label">注册时间：</span>
+        <span class="text">{{createTime}}</span>
     </div>
     <div class="form-line">
-        <span class="label">答 案：</span>
-        <span class="text">{{answer}}</span>
+        <span class="label">上次修改日期：</span>
+        <span class="text">{{updateTime}}</span>
     </div>
     <a class="btn btn-submit" href="./user-center-update.html">编辑</a>
 </div>
