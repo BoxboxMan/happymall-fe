@@ -7,17 +7,21 @@
     "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^4.2.0",
+    "font-awesome": "^4.7.0",
+    "hogan.js": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^1.0.0",
     "url-loader": "^0.5.9",
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "html-loader": "^0.5.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8090",
-    "dist": "WEBPACK_ENV=online webpack -p"
+    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8090",
+    "dist": "set WEBPACK_ENV=online&& .\\node_modules\\.bin\\webpack -p"
   },
   "repository": {
     "type": "git",

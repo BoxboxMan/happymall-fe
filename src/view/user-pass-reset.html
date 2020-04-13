@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> - mall电商平台</title>
+</head>
+<body>
+    <%= require('html-loader!./layout/nav-simple.html')%>
+    <div class="page-wrap">
+        <div class="w">
+            <div class="user-content">
+                <div class="user-title">找回密码</div>
+                <div class="user-box">
+                    <div class="error-item">
+                        <i class="fa fa-minus-circle error-icon"></i>
+                        <p class="err-msg">Error</p>
+                    </div>
+                    <div class="step-content step-username" id="stepUsername">
+                        <p class="user-item-text">请输入用户名：</p>
+                        <div class="user-item">
+                            <label class="user-label" for="username">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" class="user-input" id="username" placeholder="请输入用户名" autocomplete="off">
+                        </div>
+                        <a class="btn btn-submit" id="submit-username">下一步</a>
+                    </div>
+                    <div class="step-content step-answer" id="stepAnswer">
+                        <p class="user-item-text">密保提示问题为：<span class="question"></span></p>
+                        <div class="user-item">
+                            <label class="user-label" for="username">
+                                <i class="fa fa-key"></i>
+                            </label>
+                            <input type="text" class="user-input" id="answer" placeholder="请输入密保答案" autocomplete="off">
+                        </div>
+                        <a class="btn btn-submit" id="submit-answer">下一步</a>
+                    </div>
+                    <div class="step-content step-newPassword" id="stepNewpassword">
+                        <p class="user-item-text">请输入新密码：</p>
+                        <div class="user-item">
+                            <label class="user-label" for="username">
+                                <i class="fa fa-key"></i>
+                            </label>
+                            <input type="password" class="user-input" id="newPassword" placeholder="请输入新密码" autocomplete="off">
+                        </div>
+                        <a class="btn btn-submit" id="submit-newPassword">下一步</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="./user-login.html" class="link" target="_blank">返回登录>></a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <%= require('html-loader!./layout/footer.html')%>
+</body>
+</html>

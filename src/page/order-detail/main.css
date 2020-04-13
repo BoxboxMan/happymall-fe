@@ -1,0 +1,77 @@
+/*
+* @Author: MR.S
+* @Date:   2020-04-06 16:56:44
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-04-08 01:09:14
+*/
+
+/*订单信息*/
+.text-line{
+    height: 32px;
+    line-height: 32px;
+}
+.text-line .text{
+    margin-right: 30px;
+}
+.text-line .btn{
+    width: 100px;
+    height: 50px;
+    line-height: 44px;
+    margin-right: 20px; 
+    text-align: center;
+}
+/*商品清单*/
+.product-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.product-table th{
+    background: #ccc;
+}
+.product-table .cell{
+    border-bottom: 1px dashed #eee;
+}
+.product-table .cell-img{
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+}
+.product-table .cell-img .p-img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.product-table .cell-info{
+    width: 45%;
+    text-align: left;
+}
+.product-table .cell-price{
+    width: 15%;
+    text-align: center;
+}
+.product-table .cell-count{
+    width: 15%;
+    text-align: center;
+}
+.product-table .cell-total{
+    width: 15%;
+    text-align: center;
+}
+
+.panel-footer{
+    padding-top: 6px;
+    padding-right: 15px;
+    text-align: right;
+}
+.panel-footer .total{
+    font-weight: bold;
+    margin-left: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.panel-footer .total-price{
+    color: #c60023;
+    font-weight: bold;
+    font-size: 16px;
+}

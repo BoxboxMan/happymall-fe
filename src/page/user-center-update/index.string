@@ -1,0 +1,15 @@
+<div class="user-inifo">
+    <div class="form-line">
+        <span class="label" for="#username">用户名：</span>
+        <input class="input" disabled="disabled" id="username" autocomplete="off" value="{{username}}">
+    </div>
+    <div class="form-line">
+        <span class="label" for="#phone">电 话：</span>
+        <input class="input" type="text" id="phone" autocomplete="off" value="{{phone}}">
+    </div>
+    <div class="form-line">
+        <span class="label" for="#email">邮 箱：</span>
+        <input class="input" type="text" id="email" autocomplete="off" value="{{email}}">
+    </div>
+    <span class="btn btn-submit">提交</span>
+</div>

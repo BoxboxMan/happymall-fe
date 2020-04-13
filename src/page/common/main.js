@@ -1,1 +1,3 @@
-console.log('这里是公共模块');
+require('./layout.css');
+require('node_modules/font-awesome/css/font-awesome.css');
+require('./footer/main.css');

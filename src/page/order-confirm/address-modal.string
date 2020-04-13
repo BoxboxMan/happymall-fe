@@ -1,0 +1,73 @@
+<div class="modal close">
+    <div class="modal-content" data-id="{{data.id}}">
+        <div class="modal-header">
+            {{#isUpdate}}
+                 <h1 class="modal-title">编辑地址</h1>
+            {{/isUpdate}}
+            {{^isUpdate}}
+                <h1 class="modal-title">使用新地址</h1>
+            {{/isUpdate}}
+            <i class="fa fa-close close"></i>
+        </div>
+        <div class="modal-body">
+            <div class="form">
+                <div class="form-line">
+                    <label for="receiverName">
+                        <span class="required">*</span>收件人姓名:
+                    </label>
+                    {{#isUpdate}}
+                        <input type="text" class="form-item" id="receiverName" placeholder="请输入收件人姓名" value="{{data.receiverName}}">
+                    {{/isUpdate}}
+                    {{^isUpdate}}
+                        <input type="text" class="form-item" id="receiverName" placeholder="请输入收件人姓名">
+                    {{/isUpdate}}
+                </div>
+                <div class="form-line">
+                    <label for="receiverProvince">
+                        <span class="required">*</span>所在省市:
+                    </label>
+                    <select name="" id="receiverProvince">
+                        
+                    </select>
+                    <select name="" id="receiverCity">
+                        <option value="">---请选择---</option>
+                    </select>
+                </div>
+                <div class="form-line">
+                    <label for="receiverAddress">
+                        <span class="required">*</span>详细地址:
+                    </label>
+                    {{#isUpdate}}
+                        <input type="text" class="form-item" id="receiverAddress" placeholder="精确到门牌号" value="{{data.receiverAddress}}">
+                    {{/isUpdate}}
+                    {{^isUpdate}}
+                        <input type="text" class="form-item" id="receiverAddress" placeholder="精确到门牌号">
+                    {{/isUpdate}}
+                </div>
+                <div class="form-line">
+                    <label for="receiverPhone">
+                        <span class="required">*</span>收件人手机号:
+                    </label>
+                    {{#isUpdate}}
+                        <input type="text" class="form-item" id="receiverPhone" placeholder="请输入11位手机号" value="{{data.receiverPhone}}">
+                    {{/isUpdate}}
+                    {{^isUpdate}}
+                        <input type="text" class="form-item" id="receiverPhone" placeholder="请输入11位手机号">
+                    {{/isUpdate}}
+                </div>
+                <div class="form-line">
+                    <label for="receiverZip">邮编:</label>
+                    {{#isUpdate}}
+                        <input type="text" class="form-item" id="receiverZip" placeholder="如10000" value="{{data.receiverZip}}">
+                    {{/isUpdate}}
+                    {{^isUpdate}}
+                        <input type="text" class="form-item" id="receiverZip" placeholder="如10000">
+                    {{/isUpdate}}            
+                </div>
+                <div class="submit-address">
+                    <a class="btn address-btn">保存收获地址</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

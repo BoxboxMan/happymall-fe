@@ -1,0 +1,38 @@
+/*
+* @Author: MR.S
+* @Date:   2020-04-08 01:39:16
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-04-08 03:01:29
+*/
+.errTips{
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    color: #f60;
+    text-align: center;
+    font-weight: bold;
+    background: #eee;
+}
+
+.page-wrap{
+    background: #fff;
+}
+.payment-tips{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+}
+.img-content{
+    margin:0 auto;
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.img-content img{
+    width: 100%;
+    height: 100%;
+}
