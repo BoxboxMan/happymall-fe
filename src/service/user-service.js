@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-02 09:13:59
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-20 06:11:08
+* @Last Modified time: 2020-04-02 20:29:15
 */
 var _mall = require('util/mall.js');
 var user = {
@@ -96,8 +96,8 @@ var user = {
     },
     getUserInfo : function(resolve,reject){
         _mall.request({
-            url     : _mall.getServerUrl('/user/get_user_info'),
-            method  : 'GET',
+            url     : _mall.getServerUrl('/user/get_information'),
+            method  : 'POST',
             success : resolve,
             error   : reject
         });

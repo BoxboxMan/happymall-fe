@@ -2,12 +2,12 @@
 * @Author: MR.S
 * @Date:   2019-12-02 11:44:31
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-19 01:09:30
+* @Last Modified time: 2020-04-08 01:18:47
 */
 .header .logo{
     position: absolute;
     left: 62px;
-    top: 36px;
+    top: 30px;
     display: block;
     color: #c60023;
     font-size: 36px;
@@ -28,6 +28,8 @@
 }
 .header .search-con .search-button{
     position: absolute;
+    margin-left: -2px;
+    height: 36px;
 }
 /*面包屑导航*/
 .crumb{

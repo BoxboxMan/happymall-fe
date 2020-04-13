@@ -2,29 +2,27 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-20 04:42:20
+* @Last Modified time: 2020-04-05 20:52:20
 */
 var Hogan = require('hogan.js');
 var conf = {
     serverHost : 'http://nginx.wannarich.com'
+    // serverHost : 'http://localhost:8080'
 };
 var mall = {
     //网络请求
     request : function(param){
-        var temp = this;
+        var _this = this;
         $.ajax({
             type        : param.method  || 'get',
             dataType    : param.type    || 'json',
             url         : param.url     || '',
-            xhrFields:{
-　　          　　withCredentials:true
-　　        },
             data        : param.data    || '',
             success     : function(res){
                 if(10001 === res.status){      //成功的返回
                     typeof param.success === 'function' && param.success(res.data,res.msg);
                 }else if(20006 === res.status){// 用户未登录
-                    this.doLogin();
+                    _this.doLogin();
                 }else{                       //错误的返回
                     typeof param.error === 'function' && param.error(res.msg);
                 }   

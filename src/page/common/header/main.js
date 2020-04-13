@@ -2,13 +2,14 @@
 * @Author: MR.S
 * @Date:   2019-12-04 18:48:42
 * @Last Modified by:   MR.S
-* @Last Modified time: 2019-12-20 19:39:10
+* @Last Modified time: 2020-03-20 08:02:36
 */
 require('./main.css');
 var _mall = require('util/mall.js');
 var head = {
     init : function(){
         this.bindEvent();
+        this.onLoad();
     },
     bindEvent : function(){
         var _this = this;

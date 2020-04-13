@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-21 15:01:25
 * @Last Modified by:   MR.S
-* @Last Modified time: 2019-12-21 16:04:48
+* @Last Modified time: 2020-03-31 00:19:59
 */
 .nav-simple{
     background: #fff;
@@ -15,5 +15,4 @@
     font-weight: bold;
     color: #c60023;
     text-decoration: none;
-    float: left;
 }

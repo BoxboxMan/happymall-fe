@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-13 19:30:01
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-19 03:19:40
+* @Last Modified time: 2020-04-13 23:43:53
 */
 var webpack             = require('webpack');
 var Ex                  = require('extract-text-webpack-plugin');
@@ -12,6 +12,7 @@ var getHtmlConfig       = function(name,title){
         template : './src/view/'+ name +'.html',
         filename : 'view/'+ name +'.html',
         inject   : true,
+        favicon  : './favicon.ico',
         title    : title,
         hash     : true,
         chunks   : ['common',name]
@@ -23,6 +24,13 @@ var config={
     entry:{
         "common"                    : './src/page/common/main.js',
         "index"                     : "./src/page/index/main.js",
+        "list"                      : "./src/page/list/main.js",
+        "detail"                    : "./src/page/detail/main.js",
+        "cart"                      : "./src/page/cart/main.js",
+        "order-confirm"             : "./src/page/order-confirm/main.js",
+        "order-list"                : "./src/page/order-list/main.js",
+        "order-detail"              : "./src/page/order-detail/main.js",
+        "payment"                   : "./src/page/payment/main.js",
         "user-login"                : "./src/page/user-login/main.js",
         "result"                    : "./src/page/result/main.js",
         "user-register"             : "./src/page/user-register/main.js",
@@ -32,9 +40,9 @@ var config={
         "user-center-update"        : "./src/page/user-center-update/main.js",
     },
     output:{
-        path:'./dist',
-        publicPath:'/dist',
-        filename:'/js/[name].js'
+        path        :__dirname + '/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//static.wannarich.com/mall-fe/dist/',
+        filename    :'/js/[name].js'
     },
     module:{
         loaders:[
@@ -48,7 +56,11 @@ var config={
             },
             { 
                 test:/\.string$/,
-                loader:'html-loader'
+                loader:'html-loader',
+                query: {
+                    minimize : true,//压缩
+                    removeAttributeQuotes : false //阻止压缩时自动去除双引号
+                }
             }
         ]
     },
@@ -68,6 +80,13 @@ var config={
         }),
         new Ex("/css/[name].css"),
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
+        new HtmlWebpackPlugin(getHtmlConfig('list','商品列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment','订单支付')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),

@@ -1,0 +1,202 @@
+/*
+* @Author: MR.S
+* @Date:   2020-04-03 01:37:58
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-04-05 21:44:52
+*/
+/*收货地址部分*/
+.address-item,
+.address-add{
+    width: 200px;
+    float: left;
+    padding: 6px 9px;
+    border: 2px dashed #ccc;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+}
+.address-item.active{
+    border: 2px dashed #c60023;
+}
+.address-item:hover{
+    background: #fafafa;
+}
+.address-add:hover{
+    background: #fafafa;
+}
+.address-item:hover .address-operation{
+    visibility: visible;
+}
+.address-item .address-title{
+    border-bottom: 1px solid #ddd;
+    color: #777;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.address-item .address-detail{
+    height: 44px;
+    line-height: 22px;
+    overflow: hidden;
+    margin-top: 4px;
+    color:#444;
+}
+.address-item .address-operation{
+    text-align: right;
+    visibility: hidden;
+}
+.address-item .address-operation .link{
+    margin-right: 6px;
+}
+.address-add .address-new{
+    text-align: center;
+    color: #777;
+    padding: 8px;
+}
+.address-add .address-new .fa{
+    font-size: 50px;
+    line-height: 50px;
+    height: 50px
+}
+
+/*商品清单部分*/
+.product-table{
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+.product-table th{
+    border-bottom: 1px dotted #ddd;
+}
+.product-table td{
+    border-bottom: 1px dotted #ddd;
+}
+.product-table .cell-img{
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+}
+.product-table .cell-img .p-img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.product-table .cell-info{
+    width: 30%;
+    text-align: left;
+}
+.product-table .cell-price{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-count{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-total{
+    width: 20%;
+    text-align: center;
+}
+
+/*订单脚*/
+.submit-content{
+    background: #eee;
+    text-align: right;
+}
+.submit-content .price-text{
+    vertical-align: middle;
+}
+.submit-content .submit-total{
+    font-size: 18px;
+    color: #c60023;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.submit-content .order-create{
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+/*模态框部分*/
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    background: rgba(0,0,0,.4);
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.modal .modal-content{
+    background: #fff;
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+.modal .modal-content .modal-header{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.modal .modal-content .modal-header .modal-title{
+    font-size: 14px;
+}
+.modal .modal-content .modal-header .close{
+    position: absolute;
+    padding: 10px;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/*body*/
+.modal .modal-content .modal-body{
+    padding: 15px;
+}
+.modal .modal-content .modal-body .form-line{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.modal .modal-content .modal-body .form-line .required{
+    color: red;
+}
+.modal .modal-content .modal-body .form-line label{
+    float: left;
+    text-align: right;
+    width: 90px;
+    margin-right: 10px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+}
+.modal .modal-content .modal-body .form-line select{
+    width: 106px;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    margin-right: 15px
+}
+.modal .modal-content .modal-body .form-line .form-item{
+    width: 217px;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    margin-right: 15px;
+}
+.modal .modal-content .modal-body .submit-address{
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+.modal .modal-content .modal-body .submit-address .address-btn{
+    margin-top: 5px;
+    margin-right: 20px;
+    float: right;
+}

@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-22 18:47:53
 * @Last Modified by:   MR.S
-* @Last Modified time: 2019-12-22 18:49:34
+* @Last Modified time: 2020-04-03 12:46:43
 */
 .page-wrap{
     background: #e72955;
@@ -60,7 +60,7 @@
     border-right: 1px solid #bdbdbd;
 }
 .user-content .user-box .user-item .user-input{
-    padding: 10px 0px 10px 60px;
+    padding: 10px 0px 10px 50px;
     width: 297px;
     height: 18px;
     line-height: 18px;

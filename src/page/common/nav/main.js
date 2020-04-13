@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-12-02 08:30:28
 * @Last Modified by:   MR.S
-* @Last Modified time: 2019-12-22 19:47:40
+* @Last Modified time: 2020-04-03 01:14:00
 */
 require('./main.css');
 var _mall = require('util/mall.js');
@@ -25,7 +25,7 @@ var nav = {
             window.location.href = './user-register.html';
         });
         //退出点击事件
-        $('js-logout').click(function(){
+        $('.js-logout').click(function(){
             _user.logout(function(res){
                 window.location.reload();
             },function(err){
@@ -50,4 +50,4 @@ var nav = {
     }
 };
 
-module.export = nav.init();
+module.exports = nav.init();

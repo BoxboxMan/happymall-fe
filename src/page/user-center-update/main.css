@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2020-03-19 00:42:50
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-03-19 03:21:54
+* @Last Modified time: 2020-04-01 19:30:42
 */
 .form-line{
     height: 30px;
@@ -14,6 +14,7 @@
     display: inline-block;
     width: 60px;
     text-align: center;
+    color:black;
 }
 .form-line .input{
     height: 25px;

@@ -1,0 +1,39 @@
+/*
+* @Author: MR.S
+* @Date:   2020-03-31 20:10:03
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-03-31 23:33:17
+*/
+.page-content{
+    text-align: center;
+    color:#333;
+}
+.page-content .page-item{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #fff;
+    -moz-user-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.page-content .page-item.active{
+    cursor: auto;
+    border: 2px solid #555;
+    background: none;
+}
+.page-content .page-item.disabled{
+    color: #555;
+    background: #ccc;
+    cursor: auto;
+}
+.page-content .page-total{
+    margin-left: 10px;
+    background: none;
+    cursor: auto;
+}
