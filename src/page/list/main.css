@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2020-03-20 07:54:06
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-01 16:05:32
+* @Last Modified time: 2020-04-15 03:59:36
 */
 .sort-content{
     overflow: auto;
@@ -43,7 +43,7 @@
 }
 .p-list-content .p-item{
     position: relative;
-    width: 190px;
+    width: 175px;
     float: left;
     padding: 10px;
     margin:0 20px 20px 0;
