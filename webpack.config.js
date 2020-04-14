@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-13 19:30:01
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-14 22:47:53
+* @Last Modified time: 2020-04-15 00:59:46
 */
 var webpack             = require('webpack');
 var Ex                  = require('extract-text-webpack-plugin');
@@ -41,7 +41,7 @@ var config={
     },
     output:{
         path        :__dirname + '/dist/',
-        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//static.wannarich.com/happymall-fe/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.wannarich.com/happymall-fe/dist/',
         filename    :'/js/[name].js'
     },
     module:{
