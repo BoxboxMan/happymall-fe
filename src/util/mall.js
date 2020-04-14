@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-05 20:52:20
+* @Last Modified time: 2020-04-15 01:43:32
 */
 var Hogan = require('hogan.js');
 var conf = {
@@ -35,7 +35,7 @@ var mall = {
     },
     //用户登陆
     doLogin : function(){
-        window.location.href = '../view/user-login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     //获取服务器接口地址
     getServerUrl : function(path){
