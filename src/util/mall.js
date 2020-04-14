@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-15 01:43:32
+* @Last Modified time: 2020-04-15 02:31:08
 */
 var Hogan = require('hogan.js');
 var conf = {
@@ -18,6 +18,9 @@ var mall = {
             dataType    : param.type    || 'json',
             url         : param.url     || '',
             data        : param.data    || '',
+            xhrFields   : {
+                widthCredentials : true
+            },
             success     : function(res){
                 if(10001 === res.status){      //成功的返回
                     typeof param.success === 'function' && param.success(res.data,res.msg);
