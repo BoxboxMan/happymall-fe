@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-15 02:31:08
+* @Last Modified time: 2020-04-15 03:06:17
 */
 var Hogan = require('hogan.js');
 var conf = {
@@ -19,7 +19,7 @@ var mall = {
             url         : param.url     || '',
             data        : param.data    || '',
             xhrFields   : {
-                widthCredentials : true
+                withCredentials : true
             },
             success     : function(res){
                 if(10001 === res.status){      //成功的返回
