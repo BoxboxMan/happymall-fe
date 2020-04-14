@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2020-03-20 07:53:59
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-01 00:42:35
+* @Last Modified time: 2020-04-15 03:25:10
 */
 require('page/common/nav/main.js');
 require('page/common/header/main.js');
@@ -19,7 +19,7 @@ var page = {
             categoryId      : _mall.getUrlParam('categoryId') || '',
             orderBy         : _mall.getUrlParam('orderBy') || 'default',
             pageNum         : _mall.getUrlParam('pageNum') || 1,
-            pageSize        : _mall.getUrlParam('pageSize') || 2,
+            pageSize        : _mall.getUrlParam('pageSize') || 5,
         }
     },
     init : function(){

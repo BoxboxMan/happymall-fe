@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2020-04-05 21:47:48
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-08 00:42:13
+* @Last Modified time: 2020-04-15 03:25:11
 */
 require('page/common/nav/main.js');
 require('page/common/header/main.js');
@@ -17,7 +17,7 @@ var Pagination    = require('util/pagination/main.js');
 var page = {
     data : {
         listParam : {
-            pageSize : 2,
+            pageSize : 5,
             pageNum  : 1
         }
     },
