@@ -2,11 +2,12 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-15 03:06:17
+* @Last Modified time: 2020-06-14 13:06:55
 */
 var Hogan = require('hogan.js');
 var conf = {
-    serverHost : 'http://nginx.wannarich.com'
+    serverHost : 'http://www.wannarich.com'
+    //serverHost : 'http://nginx.wannarich.com'
     // serverHost : 'http://localhost:8080'
 };
 var mall = {
