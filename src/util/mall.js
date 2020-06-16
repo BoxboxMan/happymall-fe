@@ -2,11 +2,11 @@
 * @Author: MR.S
 * @Date:   2019-11-25 08:57:17
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-06-15 23:58:21
+* @Last Modified time: 2020-06-16 23:02:46
 */
 var Hogan = require('hogan.js');
 var conf = {
-    serverHost : 'http://wannarich.com'
+    serverHost : 'http://www.wannarich.com'
     //serverHost : 'http://nginx.wannarich.com'
     // serverHost : 'http://localhost:8080'
 };
