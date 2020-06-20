@@ -2,7 +2,7 @@
 * @Author: MR.S
 * @Date:   2019-11-13 19:30:01
 * @Last Modified by:   MR.S
-* @Last Modified time: 2020-04-15 03:49:33
+* @Last Modified time: 2020-06-20 16:43:28
 */
 var webpack             = require('webpack');
 var Ex                  = require('extract-text-webpack-plugin');
@@ -27,6 +27,7 @@ var config={
         "list"                      : "./src/page/list/main.js",
         "detail"                    : "./src/page/detail/main.js",
         "cart"                      : "./src/page/cart/main.js",
+        "about"                     : "./src/page/about/main.js",
         "order-confirm"             : "./src/page/order-confirm/main.js",
         "order-list"                : "./src/page/order-list/main.js",
         "order-detail"              : "./src/page/order-detail/main.js",
@@ -83,6 +84,7 @@ var config={
         new HtmlWebpackPlugin(getHtmlConfig('list','商品列表')),
         new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
         new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),
+        new HtmlWebpackPlugin(getHtmlConfig('about','关于Mall')),
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表')),
         new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情')),
